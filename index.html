@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Бронирование билетов</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Бронирование билетов в кинотеатр</h1>
+        
+        <!-- Выбор даты -->
+        <label for="date">Выберите дату:</label>
+        <input type="date" id="date" min="" max="">
+        
+        <!-- Список сеансов -->
+        <ul id="sessions"></ul>
+        
+        <!-- Схема зала -->
+        <div id="seats-container">
+            <p>Свободные места: <span id="free-seats-count">0</span></p>
+            <table id="seats-table">
+                <tbody>
+                    <!-- Здесь будут добавляться строки с местами -->
+                </tbody>
+            </table>
+        </div>
+        
+        <!-- Кнопки управления -->
+        <button id="book-seat-btn" disabled>Забронировать место</button>
+        <button id="cancel-booked-seat-btn" disabled>Отменить бронь</button>
+    </div>
+    
+    <!-- Подключаем jQuery и наш скрипт -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>

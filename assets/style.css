@@ -1,0 +1,74 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    width: 600px;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    padding: 20px;
+}
+
+#date {
+    display: block;
+    margin-bottom: 15px;
+}
+
+#sessions {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+#seats-container {
+    text-align: center;
+}
+
+#seats-table {
+    border-collapse: collapse;
+    width: 300px;
+    margin: auto;
+}
+
+#seats-table td {
+    cursor: pointer;
+    text-align: center;
+}
+
+.seat {
+    padding: 10px;
+    color: white;
+    font-weight: bold;
+    transition: all .3s ease;
+}
+
+.available {
+    background-color: green;
+}
+
+.booked {
+    background-color: red;
+}
+
+.archived {
+    opacity: 0.5;
+    pointer-events: none;
+}
+
+button {
+    float: right;
+    cursor: pointer;
+}
+
+button:disabled {
+    opacity: .5;
+}
